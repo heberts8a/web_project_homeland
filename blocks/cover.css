@@ -1,0 +1,74 @@
+.cover {
+  background-image: url("../images/cover__background.png");
+  margin-top: 92px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 740px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover:hover {
+  background-color: #2a2c2f;
+  opacity: 0.3;
+  transition: 5s ease-in-out forwards;
+}
+
+.cover__title {
+  color: #fffdfd;
+  font-size: 72px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  line-height: 76px;
+  margin: 0;
+}
+
+.cover__text {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cover__button {
+  color: #fff;
+}
+
+/* -------- */
+
+@media screen and (min-width: 950px) {
+  .cover {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    width: auto;
+    height: 254px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__title {
+    font-size: 32px;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 900;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__text {
+    font-size: 14px;
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 16px;
+  }
+}
